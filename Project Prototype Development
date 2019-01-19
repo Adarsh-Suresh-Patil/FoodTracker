@@ -1,0 +1,39 @@
+FoodTracker Prototype Development:
+
+The development of FoodTracker prototype is done on Hyperledger Fabric on IBM’s Hyperledger Fabric Composer. 
+
+Scope of Prototype Development
+
+The following are the scope of development of the prototype:
+1.	Only one product is considered for the development of prototype. In this case, we used bananas for the prototype.
+2.	A certain part of the food chain is considered. In this case, the food chain processes between farmer and processor via a shipper.
+3.	The following attributes are considered as a part of transaction between a farmer and a processor:
+  a.	Food Asset Ownership
+  b.	Entity Reputation
+  c.	Temperature Monitoring during Shipping
+  d.	Credit Transfer
+
+The credit transfer between the entities demonstrated in the prototype can be considered as a direct currency transfer. 
+However, at this stage it is not defined what the currency would be and how this currency would be transferred.
+
+Assumptions
+
+The following assumptions were considered:
+1.	Shipments carry only one type of product. For the convenience of prototype development, the product considered are bananas.
+2.	Temperatures can be tracked throughout the shipment automatically.
+3.	Every entity in the blockchain has authority to view complete detail of every transaction.
+
+Business Rules Considered
+
+The following business rules were considered to build the prototype:
+1.	The contract created between the entities define the terms of sales of entities in the chain.
+2.	Food asset ownership would be tracked throughout the chain.
+3.	A minimum temperature and maximum temperature would be defined in the contract between the entities. 
+Different penalty rates for violating minimum and maximum temperature would be defined in the contract.
+4.	Every entity would be given a point for a good shipment of product which includes temperatures maintained throughout 
+the shipment and on-time delivery of the products.
+5.	A point would be deducted from every entity’s reputation in case of violation of temperature during shipment 
+or in case of late delivery.
+6.	The contract defines the unit price of the product. Quantity of the product is set during the initiation of the shipment.
+7.	Credits would be transferred to each entity in the chain as per the contract defined between the entities.
+ 
